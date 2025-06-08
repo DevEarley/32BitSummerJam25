@@ -40,7 +40,7 @@ output_port_for_preview = 0
 default_input_values = [0, 0.0, 1, 4.0, 2, 1.5]
 
 [sub_resource type="VisualShaderNodeFloatOp" id="VisualShaderNodeFloatOp_3bu26"]
-default_input_values = [0, 0.0, 1, -1.0]
+default_input_values = [0, 0.0, 1, -1.1]
 
 [sub_resource type="VisualShaderNodeClamp" id="VisualShaderNodeClamp_qmut5"]
 output_port_for_preview = 0
@@ -301,7 +301,7 @@ void fragment() {
 
 
 // FloatOp:32
-	float n_in32p1 = -1.00000;
+	float n_in32p1 = -1.10000;
 	float n_out32p0 = n_out38p0 + n_in32p1;
 
 
@@ -407,7 +407,7 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(43.1152, -8.27548)
+graph_offset = Vector2(-669.462, 58.8404)
 modes/specular = 2
 varyings/alpha = "0,0"
 varyings/peak = "0,0"

@@ -106,9 +106,9 @@ tracks/0/path = NodePath("Camera3D:position:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(-13.62, -0.25, 0, 5.6, 9.91515, -2.515, -2.06667, -0.029182, 0.25, 0),
-"times": PackedFloat32Array(0, 8)
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-13.62, -0.25, 0, 0.8, 0.019805, -13.62, -0.25, 0, 3.26666, 0.811958, -2.515, -2.06667, -0.029182, 0.25, 0),
+"times": PackedFloat32Array(0, 1.26667, 9.26667)
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
@@ -117,9 +117,9 @@ tracks/1/path = NodePath("Camera3D:position:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(3.312, -0.25, 0, 0.25, 0, 3.312, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 7.86667)
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(3.312, -0.25, 0, 0.25, 0, 3.312, -0.25, 0, 0.25, 0, 3.312, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.26667, 9.13334)
 }
 tracks/2/type = "bezier"
 tracks/2/imported = false
@@ -128,9 +128,9 @@ tracks/2/path = NodePath("Camera3D:position:z")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(3.847, -0.25, 0, 0.25, 0, 3.847, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 8.03333)
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(3.847, -0.25, 0, 0.25, 0, 3.847, -0.25, 0, 0.25, 0, 3.847, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.26667, 9.3)
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_q2pol"]
@@ -149,16 +149,70 @@ environment = SubResource("Environment_1bvp3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18.3332, 0)
 
 [node name="summer-dreams-utility" parent="." instance=ExtResource("2_h2yge")]
-transform = Transform3D(0.311141, 0, 0.950364, 0, 1, 0, -0.950364, 0, 0.311141, -19.448, -1.28262, -17.137)
+transform = Transform3D(0.0390326, -0.0304338, 0.998775, 0.00118846, 0.999537, 0.0304106, -0.999237, 0, 0.0390506, -14.977, -0.957139, -10.7042)
 
 [node name="summer-dreams-utility3" parent="." instance=ExtResource("2_h2yge")]
-transform = Transform3D(0.311141, 0, 0.950364, 0, 1, 0, -0.950364, 0, 0.311141, -15.898, -1.24508, -16.1364)
+transform = Transform3D(0.0390325, -0.0304338, 0.998775, 0.00118846, 0.999537, 0.0304106, -0.999237, 0, 0.0390506, -11.2817, -0.82376, -10.556)
 
 [node name="summer-dreams-utility4" parent="." instance=ExtResource("2_h2yge")]
-transform = Transform3D(0.747578, 0, 0.664174, 0, 1, 0, -0.664174, 0, 0.747578, -12.1438, -1.21548, -14.9116)
+transform = Transform3D(0.536918, -0.0304338, 0.843085, 0.0163481, 0.999537, 0.0256702, -0.843476, 0, 0.537167, -7.33831, -0.674083, -10.4058)
 
 [node name="summer-dreams-utility2" parent="." instance=ExtResource("2_h2yge")]
-transform = Transform3D(-0.493942, 0, 0.869495, 0, 1, 0, -0.869495, 0, -0.493942, -6.55, 0, -2.929)
+transform = Transform3D(-0.101686, -0.0304338, 0.994351, -0.00309614, 0.999537, 0.0302759, -0.994812, -1.38778e-17, -0.101734, -4.57433, -0.579481, -8.53918)
+
+[node name="summer-dreams-utility5" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.392786, -0.0719544, 0.937435, -0.0119869, 0.961682, 0.0873692, -0.939017, -0.0423744, 0.391009, -26.5447, -1.95554, -18.7062)
+
+[node name="summer-dreams-utility6" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.392786, -0.0719544, 0.937435, -0.0119869, 0.961682, 0.0873692, -0.939017, -0.0423744, 0.391009, -23.0683, -1.6232, -17.3061)
+
+[node name="summer-dreams-utility7" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.816746, -0.0719544, 0.604578, 0.0338407, 0.961682, 0.0805863, -0.618877, -0.0423744, 0.802283, -19.3559, -1.26158, -15.8198)
+
+[node name="summer-dreams-utility9" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.392786, -0.0719544, 0.937435, -0.0119869, 0.961682, 0.0873692, -0.939017, -0.0423744, 0.391009, -35.7381, -2.94346, -24.4056)
+
+[node name="summer-dreams-utility10" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.392786, -0.0719544, 0.937435, -0.0119869, 0.961682, 0.0873692, -0.939017, -0.0423744, 0.391009, -32.2617, -2.61112, -23.0055)
+
+[node name="summer-dreams-utility11" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.816746, -0.0719544, 0.604578, 0.0338407, 0.961682, 0.0805863, -0.618877, -0.0423744, 0.802283, -28.5493, -2.2495, -21.5191)
+
+[node name="summer-dreams-utility8" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.69249, -0.0304338, 0.720786, 0.0210849, 0.999537, 0.0219464, -0.72112, 0, 0.692811, -17.3186, -1.04188, -13.1071)
+
+[node name="summer-dreams-utility12" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(-0.27608, -0.0236743, 0.960843, 0.0118494, 0.999537, 0.0280323, -0.961062, 0.0191246, -0.275671, -48.843, -3.53137, -28.7285)
+
+[node name="summer-dreams-utility13" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.389169, -0.0304338, 0.920664, 0.0118494, 0.999537, 0.0280323, -0.92109, 0, 0.389349, -44.9928, -3.40683, -29.7004)
+
+[node name="summer-dreams-utility14" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.800016, -0.0304338, 0.599207, 0.0243588, 0.999537, 0.0182446, -0.599485, 0, 0.800386, -41.3565, -3.2665, -28.1666)
+
+[node name="summer-dreams-utility15" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.255951, -0.0304338, 0.966211, 0.00779319, 0.999537, 0.0294191, -0.966658, 0, 0.25607, -39.4293, -3.19738, -25.4437)
+
+[node name="summer-dreams-utility16" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.0786519, -0.0765803, 1.01319, -0.00266543, 0.962221, 0.0813257, -1.01488, -0.00846199, 0.0783073, -62.3408, -4.42106, -32.7108)
+
+[node name="summer-dreams-utility17" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.0786518, -0.0765803, 1.01319, -0.00266543, 0.962221, 0.0813257, -1.01488, -0.00846197, 0.0783072, -58.599, -4.1106, -32.4677)
+
+[node name="summer-dreams-utility18" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.581817, -0.0765803, 0.825962, 0.0388887, 0.962221, 0.0707759, -0.843329, -0.00846198, 0.573099, -54.606, -3.77224, -32.2164)
+
+[node name="summer-dreams-utility19" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.0786519, -0.0765803, 1.01319, -0.00266543, 0.962221, 0.0813257, -1.01488, -0.00846199, 0.0783073, -72.8622, -5.32966, -35.2507)
+
+[node name="summer-dreams-utility20" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.0786518, -0.0765803, 1.01319, -0.00266543, 0.962221, 0.0813257, -1.01488, -0.00846197, 0.0783072, -69.1204, -5.0192, -35.0076)
+
+[node name="summer-dreams-utility21" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.581817, -0.0765803, 0.825962, 0.0388887, 0.962221, 0.0707759, -0.843329, -0.00846198, 0.573099, -65.1274, -4.68084, -34.7563)
+
+[node name="summer-dreams-utility22" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.431713, -0.0236743, 0.9017, 0.0274758, 0.999537, 0.0130882, -0.901592, 0.0191246, 0.432164, -51.8201, -3.5857, -30.277)
 
 [node name="summer-dreams-billboard" parent="." instance=ExtResource("1_0xm2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.82173, 0, -2.9)

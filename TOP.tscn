@@ -9,13 +9,13 @@
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
 material = ExtResource("1_okq1w")
-offset_right = 1601.0
+offset_right = 2105.0
 offset_bottom = 719.0
 stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
 handle_input_locally = false
-size = Vector2i(1601, 719)
+size = Vector2i(2105, 719)
 render_target_update_mode = 4
 
 [node name="Main" parent="." instance=ExtResource("1_8s7fb")]
