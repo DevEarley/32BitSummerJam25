@@ -1,0 +1,6 @@
+[gd_resource type="GradientTexture1D" load_steps=2 format=3 uid="uid://d1kt882endp0r"]
+
+[ext_resource type="Gradient" uid="uid://mkahtuy2nmyo" path="res://SKY_GRADIENT_.tres" id="1_ys26m"]
+
+[resource]
+gradient = ExtResource("1_ys26m")

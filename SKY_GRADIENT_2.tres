@@ -1,0 +1,7 @@
+[gd_resource type="GradientTexture2D" load_steps=2 format=3 uid="uid://c02glc0sxmns"]
+
+[ext_resource type="Gradient" uid="uid://mkahtuy2nmyo" path="res://SKY_GRADIENT_.tres" id="1_iq57r"]
+
+[resource]
+gradient = ExtResource("1_iq57r")
+fill_from = Vector2(1, 1)

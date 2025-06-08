@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bdb52ul5q3itb"]
+
+[ext_resource type="Texture2D" uid="uid://c4xtqgyeg2j3g" path="res://summer-dreams-billboard_0.png" id="1_37ows"]
+
+[resource]
+transparency = 1
+blend_mode = 1
+depth_draw_mode = 1
+no_depth_test = true
+shading_mode = 0
+disable_ambient_light = true
+disable_fog = true
+albedo_color = Color(1, 1, 1, 0.101961)
+albedo_texture = ExtResource("1_37ows")
+albedo_texture_force_srgb = true
+texture_filter = 0
+texture_repeat = false
+disable_receive_shadows = true

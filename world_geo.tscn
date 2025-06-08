@@ -1,0 +1,176 @@
+[gd_scene load_steps=11 format=3 uid="uid://byfrvigt8ddag"]
+
+[ext_resource type="PackedScene" uid="uid://davf2y7tw7o2g" path="res://summer-dreams-billboard.glb" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://dx7akkq0l68t6" path="res://ocean.glb" id="1_3y4qm"]
+[ext_resource type="PackedScene" uid="uid://d28ykhhbyt4nd" path="res://summer-dreams-utility.glb" id="2_h2yge"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0xm2m"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_h2yge"]
+sky_material = SubResource("ProceduralSkyMaterial_0xm2m")
+
+[sub_resource type="Environment" id="Environment_1bvp3"]
+background_mode = 1
+background_color = Color(0.615686, 0.694118, 0.894118, 1)
+sky = SubResource("Sky_h2yge")
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+reflected_light_source = 1
+fog_mode = 1
+fog_density = 1.0
+adjustment_brightness = 0.19
+
+[sub_resource type="Animation" id="Animation_gnknc"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-2.515, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(3.312, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camera3D:position:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(3.847, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_q2pol"]
+resource_name = "idle"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-2.515, -2.06667, -0.029182, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(3.312, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camera3D:position:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(3.847, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_3y4qm"]
+resource_name = "intro"
+length = 10.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-13.62, -0.25, 0, 5.6, 9.91515, -2.515, -2.06667, -0.029182, 0.25, 0),
+"times": PackedFloat32Array(0, 8)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(3.312, -0.25, 0, 0.25, 0, 3.312, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 7.86667)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camera3D:position:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(3.847, -0.25, 0, 0.25, 0, 3.847, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 8.03333)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q2pol"]
+_data = {
+&"RESET": SubResource("Animation_gnknc"),
+&"idle": SubResource("Animation_q2pol"),
+&"intro": SubResource("Animation_3y4qm")
+}
+
+[node name="world geo" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1bvp3")
+
+[node name="ocean" parent="." instance=ExtResource("1_3y4qm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18.3332, 0)
+
+[node name="summer-dreams-utility" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.311141, 0, 0.950364, 0, 1, 0, -0.950364, 0, 0.311141, -19.448, -1.28262, -17.137)
+
+[node name="summer-dreams-utility3" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.311141, 0, 0.950364, 0, 1, 0, -0.950364, 0, 0.311141, -15.898, -1.24508, -16.1364)
+
+[node name="summer-dreams-utility4" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.747578, 0, 0.664174, 0, 1, 0, -0.664174, 0, 0.747578, -12.1438, -1.21548, -14.9116)
+
+[node name="summer-dreams-utility2" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(-0.493942, 0, 0.869495, 0, 1, 0, -0.869495, 0, -0.493942, -6.55, 0, -2.929)
+
+[node name="summer-dreams-billboard" parent="." instance=ExtResource("1_0xm2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.82173, 0, -2.9)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.983255, -0.0285079, 0.179992, 0, 0.987689, 0.156435, -0.182235, -0.153815, 0.97115, -2.515, 3.312, 3.847)
+current = true
+fov = 35.2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_q2pol")
+}
+autoplay = "intro"
+next/intro = &"idle"

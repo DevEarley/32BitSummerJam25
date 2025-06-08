@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://bvmb3w7v0qgm7"]
+
+[ext_resource type="Shader" uid="uid://7kkkfe42ccuv" path="res://sky.tres" id="1_kdoo7"]
+[ext_resource type="Texture2D" uid="uid://bodnd81s6prsb" path="res://clouds_1.png" id="2_bokv5"]
+[ext_resource type="Texture2D" uid="uid://c02glc0sxmns" path="res://SKY_GRADIENT_2.tres" id="2_kdoo7"]
+
+[resource]
+shader = ExtResource("1_kdoo7")
+shader_parameter/CLOUDS = ExtResource("2_bokv5")
+shader_parameter/Texture = ExtResource("2_kdoo7")
